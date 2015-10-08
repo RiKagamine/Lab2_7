@@ -1,0 +1,31 @@
+__author__ = 'Rin'
+# 1
+import math
+A = float(input("A: "))
+B = float(input("B: "))
+C = float(input("D: "))
+D = float(input("C: "))
+x1 = math.sin(A) + math.sin(B)
+x2 = C + D
+if x2 == 0:
+    print('Divided by zero!')
+    quit()
+X = pow(math.e, x1 / x2)
+print("X: " + str(X))
+
+# 2
+A = float(input("A: "))
+B = float(input("B: "))
+C = float(input("D: "))
+D = float(input("C: "))
+if C  == 0:
+    print('Divided by zero!')
+    quit()
+x1 = B / 2 + D / C
+x2 = math.e ** A * math.cos(x1)
+x3 = D * C + math.sin(C)
+if x3 == 0:
+    print('Divided by zero!')
+    quit()
+X = x2 / x3
+print("X: " + str(X))
