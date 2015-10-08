@@ -1,0 +1,13 @@
+__author__ = 'Rin'
+# -*- coding: utf-8 -*-
+A = str(input('Введіть тризначне число: '))
+if int(A) < 100 or int(A) > 999:
+    print("Будь ласка, введіть тризначне число.")
+    quit()
+A0 = list(A)[0]
+A1 = list(A)[1]
+A2 = list(A)[2]
+if A0 == A1 or A0 == A2 or A1 == A2:
+    print('Серед цифр в числі є однакові.')
+else:
+    print('Цифри в числі різні.')
