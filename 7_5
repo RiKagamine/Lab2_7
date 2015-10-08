@@ -1,0 +1,17 @@
+__author__ = 'Rin'
+# -*- coding: utf-8 -*-
+ans = str(input('Ви вийшли в дорогу один? (y/n) '))
+if ans != 'y' and ans != 'n':
+    print('Введіть коректну відповідь! У - так, n - ні.')
+    quit()
+if ans == 'y':
+    print('Дорога буду сумна.')
+elif ans == 'n':
+    ans2 = str((input('Ви вийшли в дорогу з другом? (y/n) ')))
+    if ans2 != 'y' and ans2 != 'n':
+        print('Введіть коректну відповідь! У - так, n - ні.')
+        quit()
+    elif ans2 == 'y':
+        print('Дорога буде весела.')
+    elif ans2 == 'n':
+        print('Дорога буде сумна.')
