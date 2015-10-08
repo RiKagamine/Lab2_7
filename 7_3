@@ -1,0 +1,13 @@
+__author__ = 'Rin'
+# -*- coding: utf-8 -*-
+A = str(input('Вік (20-99): '))
+A1 = list(A)[1]
+if int(A) > 99 or int(A) < 20:
+    print("Будь ласка, введіть вік від 20 до 99.")
+    quit()
+if int(A1) == 0 or int(A1) > 4:
+    print('Вік - ' + str(A) + ' років.')
+elif int(A1) == 1:
+    print('Вік - ' + str(A) + ' рік.')
+elif int(A1) > 1 and int(A1) < 5:
+    print('Вік - ' + str(A) + ' роки.')
